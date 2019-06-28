@@ -28,9 +28,9 @@ def setup():
             pushMatrix()
             translate(j*square_size/2 + (i * random(-ran_mov, ran_mov)), i*square_size/2 + + (i * random(-ran_mov, ran_mov)))
             c = colors[int(random(len(colors)))]
-            fill(c[0], c[1], c[2])
+            fill(c[0], c[1], c[2], 255)
             rotate(random(-i*(ran_rot+i*.003), i*(ran_rot+i*.003)))
-            rect(-square_size/2, -square_size/2, square_size/2, square_size/2)
+            rect(-square_size/2, -square_size/2, square_size/2, square_size/2, )
             popMatrix()
     save("Examples/Pebbles-" + str(square_size) + "-" + str(square_count) + "x" + str(square_rows) + ".png")
 def draw():
