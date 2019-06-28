@@ -17,6 +17,7 @@ def setup():
     img = createImage(w, h, ARGB)
     
     background(120, 120, 120)
+    stroke(80, 80, 80)
     
     random_rotate = 0.0
     random_increase = .02
